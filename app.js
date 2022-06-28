@@ -8,9 +8,6 @@ const errorHandler = require("./middlewares/errorHandler");
 const app = express();
 const port = process.env.PORT || 3000;
 
-// --- express serving static files middleware ---
-app.use(express.static("./public"));
-
 // --- express body-parser middleware ---
 app.use(express.json({ limit: "10kb" }));
 
